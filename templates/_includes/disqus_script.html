@@ -3,7 +3,8 @@
 	  var disqus_shortname = '{{ DISQUS_SITENAME }}';
       {% if article %}
           var disqus_identifier = '/{{ article.url }}';
-          var disqus_url = '{{ SITEURL }}/{{ article.url }}';
+          //var disqus_url = '{{ SITEURL }}/{{ article.url }}';
+          var disqus_url = 'http://gimo.me/{{ article.url }}';
           var disqus_title = '{{ article.title }}';
       {% endif %}
 	  (function() {
