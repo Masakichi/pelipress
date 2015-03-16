@@ -8,5 +8,12 @@
     </header>
     {{ page.content }}
   </article>
+
+  {% if DISQUS_SITENAME and SITEURL and page.status != "draft" %}
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include '_includes/disqus_thread.html' %}</div>
+  </section>
+  {% endif %}
 </div>
 {% endblock %}
